@@ -1,0 +1,34 @@
+Windows Registry Editor Version 5.00
+; ===========================================================================
+; Adds "Open Powershell Here" and "Open VSCode Here" to folders' context menu
+; ===========================================================================
+
+; =====================================
+; Powershell keys
+; =====================================
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\PowershellMenu]
+@="Open Powershell Here"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\PowershellMenu\command]
+@="C:\\\\Windows\\\\system32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -NoExit -Command Set-Location -LiteralPath '%1'"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\PowershellMenu]
+@="Open Powershell Here"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\PowershellMenu\command]
+@="C:\\\\Windows\\\\system32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe -NoExit -Command Set-Location -LiteralPath '%v'"
+
+; =====================================
+; VSCode keys
+; =====================================
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\VSCode]
+@="Open VSCode Here"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\VSCode\command]
+@="\"C:\\\\Program Files\\\\Microsoft VS Code\\\\Code.exe\" \"%1\""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\VSCode]
+@="Open VSCode Here"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\VSCode\command]
+@="\"C:\\\\Program Files\\\\Microsoft VS Code\\\\Code.exe\" \"%v\""
