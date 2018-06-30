@@ -11,3 +11,8 @@ Adds some entries to the registry to add context menu options when right-clickin
 
 ## Needs more cats
 ![alt-text](https://i.imgur.com/LmlvSoO.jpg "A suspicious cat")
+
+## Some Stuff
+I pretty much just put this here so I'd have somewhere to keep it.
+
+I am not responsible if you mangle your registry, etc, etc
